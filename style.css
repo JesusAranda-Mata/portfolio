@@ -45,6 +45,7 @@ body {
   a:hover {
     padding: 25px;  
     border: 2px solid black;
+    border-radius: 25px;
   }
 
   .has-border {
