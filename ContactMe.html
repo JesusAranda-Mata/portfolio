@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactMe-styles.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <form action="./result.html" method="GET", enctype="multipart/form-data">
+        <header>
+            <h1>You Found Me!</h1>
+        </header>
+        <div class="massage">
+            <h4>Reach out to me, I'll get back to you</h4>
+            <input type="email" id="emailInput" placeholder="You Email" required>
+            <input type="text" name="Message" id="messageArea" cols="50" rows="10" maxlength="500" minlength="20" placeholder="You massage for me" required></textarea>
+            <!-- <button onclick="validate">Validate</button> -->
+        </div>
+        <section id="checkBox" required>
+            <h4>How did you hear about me?</h4>
+            <input type="checkbox" id="classmate" name="classmate" value="classmate" >
+            <label for="classmate">Classmate</label> <br>
+            <input type="checkbox" id="ResumeSubmission" name="ResumeSubmission" value="ResumeSubmission" >
+            <label for="ResumeSubmission">Resume Submission</label><br>
+            <input type="checkbox" id="LinkedIn" name="LinkedIn" value="LinkedIn" >
+            <label for="LinkedIn">LinkedIn</label><br>
+            <input type="checkbox" id="CodingAR" name="CodingAR" value="CodingAR" >
+            <label for="CodingAR">Coding Academy Rec</label>
+        </section>
+        <section id="radioBTN">
+            <h4>Do you wish to be contacted back?</h4>
+            <input type="radio" id="yesOption" name="Option" value="yesOption">
+            <label for="Option">YES</label> <br>
+            <input type="radio" id="noOption" name="Option" value="noOption">
+            <label for="Option">NO!</label> <br>
+        </section>
+        <section id="birthDayWish">
+            <h4>Would you like to get "Happy Birthday Wishes" (optional)</h4>
+            <input type="date">
+        </section>
+         <div>
+            <input type="submit" placeholder="Submit" method="fetch">
+         </div>   
+    </form>
+    <footer>
+        <p>For my social  media click <a href="./aboutPage.html">here</a></p> 
+    </footer>
+</body>
+<script src="./contactMe-script.js"></script>
+</html>
